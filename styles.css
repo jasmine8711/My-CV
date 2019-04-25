@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #b4bec0;
+    background-image: url(./438.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.grid-container {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box3" 
+    "box4 box4" 
+    "box5 box5"
+    "box6 box6";
+    background-color: white;
+    box-shadow: 1px 10px 50px black;
+   
+}
+
+.box1 { grid-area: box1; }
+.box1 img{
+    width: 100%;
+}
+
+.box2 { 
+    grid-area: box2; 
+    margin-top: 30%;
+}
+.box2 h2{
+    color: rgb(253, 208, 6);
+    margin-bottom: 0;
+    font-family: 'Arimo', sans-serif;
+}
+.box2 p{
+    background-color: black;
+    color: white;
+    padding: 2px;
+    margin-top: 0;
+    padding-left: 5px;
+}
+.box3 { 
+    grid-area: box3;
+    background: rgb(253, 208, 6); 
+    text-align: center;
+}
+.box3 h2{
+    width: 50%;
+    margin: 0;
+    margin-top: 5px;
+    border-bottom: 1px solid black
+}
+
+.box4 { 
+    grid-area: box4; 
+    background: rgb(253, 208, 6); 
+}
+.box4 p{
+    padding: 1rem;
+    padding-top: 0; 
+}
+
+.box5 { 
+    grid-area: box5; 
+    background-color: rgb(78, 78, 78);
+    color: white;
+    
+}
+h3{
+    width: 60%;
+    color: rgb(253, 208, 6);
+    border-bottom: 1px solid rgb(253, 208, 6);
+    padding-left: 1rem;
+    text-align: center;
+}
+.contact{
+    text-align: right;
+    margin-right: 1rem;
+}
+table{
+    text-align: left;
+    border-spacing: 1rem;
+}
+.icon{
+    text-align: right;
+}
+.skills{
+    text-align: center;
+    margin: 0 auto;
+}
+.bgyellow{
+    background: rgb(253, 208, 6);
+    color: black;
+
+}
+.app{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.box6 { 
+        width: 200%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head1" 
+        "bjfu" 
+        "becode"
+        "head2"
+        "BIAD" 
+        "ddon" 
+        "freelance";
+      }
+      
+.head1 { grid-area: head1; }
+
+.bjfu {
+    margin: 0 auto; 
+    margin-left: 2rem;
+    grid-area: bjfu;
+ }
+
+.becode { 
+    margin: 0 auto; 
+    margin-left: 2rem;
+    grid-area: becode; 
+}
+a{
+    text-decoration: none;
+    font-family: 'Arimo', sans-serif;
+    color:rgb(253, 208, 6);
+    
+}
+h4{
+    font-family: 'Arimo', sans-serif;
+    color: black; 
+}
+.head2 { grid-area: head2; }
+
+.BIAD { 
+    margin: 0 auto; 
+    margin-left: 2rem;
+    grid-area: BIAD; }
+
+.ddon {
+    margin: 0 auto; 
+    margin-left: 2rem;
+    grid-area: ddon; }
+
+.freelance { 
+    
+    margin: 0 auto; 
+    margin-left: 2rem;
+    grid-area: freelance; }
+
+.bg{
+    font-weight: bolder;
+    color: black;
+    border-bottom: black 1px solid;
+}
+footer{
+    height: 3rem;
+    background-color: rgb(253, 208, 6);
+    width: 100%;
+}
+
+@media only screen and (max-width: 360px){
+    body{
+      background: none;
+   
+    }
+    .grid-container{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #b4bec0;
+        background-image: url(./438.jpg);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4" 
+        "box5 box6";
+    }
+    .box2 h2{
+        font-size: 4rem;
+    }
+    .box2 p{
+       font-size: 1.5rem;
+    }
+  
+  .box4 { 
+    grid-area: box4; 
+    color: white;
+    background:rgb(78, 78, 78) ; 
+}
+  .box6 { 
+    width: 100%;
+        grid-area: box6; 
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 1auto 1auto 1auto 1auto 1auto;
+        grid-template-areas: 
+        "head1 head2" 
+        "bjfu BIAD" 
+        "bjfu ddon" 
+        "becode ddon"
+        "becode freelance";
+}
+    .head1 {
+        text-align: right;
+         grid-area: head1; 
+        width: 100%;
+        border-right: black 1px solid;
+        border-bottom:  black 1px solid;
+    }
+    .head2 { 
+        width: 100%;
+        grid-area: head2; 
+        border-right: black 1px solid;
+        border-bottom:  black 1px solid;
+    }
+    .bg{
+        border: none;
+        text-align: center;
+    }
+    h4>a{
+    width: 100%;
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 1.2rem;
+}
+    .bjfu { 
+        grid-area: bjfu;
+        margin: 0 auto; 
+        width: 100%;
+        border-right: 1px solid black; }
+    .bjfu h4{
+        padding-right: 1rem;
+        border-bottom: 1px solid black;
+    }   
+    .bjfu a{
+        text-align: right;
+    }
+    
+    .becode { 
+        grid-area: becode; 
+        width: 100%;
+        margin: 0 auto; 
+        border-right: 1px solid black;
+    }
+    .becode h4{
+        padding-right: 1rem;
+        border-bottom: 1px solid black;
+    }
+    .becode a{
+        text-align: right;
+    }
+    
+    .BIAD { 
+        width: 100%;
+        margin: 0 auto; 
+        grid-area: BIAD; 
+    }
+    .BIAD h4{
+        padding-right: 1rem;
+        border-bottom: 1px solid black;
+    }
+    .ddon {
+        width: 100%;
+        margin: 0 auto; 
+        grid-area: ddon; 
+     }
+    .ddon h4{
+        padding-right: 1rem;
+        border-bottom: 1px solid black;
+
+    }
+    h4.line{
+        border-bottom: none;
+        margin-left: 1rem;
+    }
+     .freelance { 
+         width: 100%;
+            margin: 0 auto; 
+        }
+        .freelance h4{
+            padding-right: 1rem;
+            border-bottom: 1px solid black;
+        }
+ footer{
+ display:  none;
+}
+}
+
+
