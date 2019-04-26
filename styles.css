@@ -3,10 +3,7 @@ body{
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     background-color: #b4bec0;
-    background-image: url(./438.jpg);
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: right top;
+ 
 }
 .grid-container {
     display: grid;
@@ -139,8 +136,8 @@ a{
     text-decoration: none;
     font-family: 'Arimo', sans-serif;
     color:rgb(253, 208, 6);
-    
 }
+
 h4{
     font-family: 'Arimo', sans-serif;
     color: black; 
@@ -192,11 +189,12 @@ footer{
         margin: 0;
         padding: 0;
         font-family: 'Quicksand', sans-serif;
-        background-color: #b4bec0;
-        background-image: url(./438.jpg);
-        background-size: 40%;
+        background:#b4bec0;
+        background-image: url(./Jm.png);
         background-repeat: no-repeat;
-        background-position: right top;
+        background-position: bottom;
+        background-position-x: 110%;
+        
     }
     .grid-container {
         display: grid;
@@ -219,6 +217,25 @@ footer{
     color: white;
     background:rgb(78, 78, 78) ; 
 }
+.contact{
+    margin-left: 1rem;
+}
+.contact>h3{
+    position: relative;
+    left:-1rem;
+}
+h3.bgyellow{
+    position: relative;
+    left:-1rem;
+}
+.skills{
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+table{
+    text-align: left;
+    border-spacing: 3px;
+}
   .box6 { 
     width: 100%;
         grid-area: box6; 
@@ -228,10 +245,10 @@ footer{
         grid-template-rows: 1auto 1auto 1auto 1auto 1auto;
         grid-template-areas: 
         "head1 head2" 
-        "bjfu BIAD" 
-        "bjfu ddon" 
-        "becode ddon"
-        "becode freelance";
+        "becode BIAD" 
+        "becode ddon" 
+        "bjfu ddon"
+        "bjfu freelance";
 }
     .head1 {
         text-align: right;
@@ -250,6 +267,7 @@ footer{
         border: none;
         text-align: center;
     }
+
     h4>a{
     width: 100%;
     display: inline-block;
@@ -268,7 +286,13 @@ footer{
     .bjfu a{
         text-align: right;
     }
+    .bjfu a:hover{
+            color:orange;
     
+    }
+    .bjfu p{
+        padding: 10px;
+    }
     .becode { 
         grid-area: becode; 
         width: 100%;
@@ -282,7 +306,9 @@ footer{
     .becode a{
         text-align: right;
     }
-    
+    .becode p{
+        padding: 10px;
+    }
     .BIAD { 
         width: 100%;
         margin: 0 auto; 
